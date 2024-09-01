@@ -1,0 +1,2023 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* Body and general layout */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center; 
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ff6600;
+    text-shadow: 0 0 5px rgba(255, 102, 0, 0.8);
+}
+
+/* Hero Banner */
+.hero-banner {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Latest News and Featured Content */
+.latest-news, .featured-content {
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.latest-news:hover, .featured-content:hover {
+    transform: scale(1.02);
+}
+
+/* About Naruto Section */
+#about {
+    background: #eaeaea;
+    padding: 2rem;
+}
+
+#about h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.series-overview, .character-profiles, .history-trivia {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.series-overview:hover, .character-profiles:hover, .history-trivia:hover {
+    transform: scale(1.02);
+}
+
+/* Episodes & Manga */
+#episodes {
+    padding: 2rem;
+}
+
+.episode-guides, .manga-chapters, .streaming-links {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.episode-guides:hover, .manga-chapters:hover, .streaming-links:hover {
+    transform: scale(1.02);
+}
+
+/* Fan Creations Section */
+#fan-creations {
+    padding: 20px;
+    background: #eaeaea;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#fan-creations h2 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#fan-creations h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #FF6600, #FF9900);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.fan-art, .fan-fiction, .cosplay-photos {
+    margin-bottom: 20px;
+}
+
+.fan-art h3, .fan-fiction h3, .cosplay-photos h3 {
+    font-family: 'Naruto', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.fan-art h3::before, .fan-fiction h3::before, .cosplay-photos h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #FF6600;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.gallery, .fiction-list, .cosplay-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-item, .cosplay-item {
+    width: 150px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img, .cosplay-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img, .cosplay-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item p, .cosplay-item p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.fiction-list article {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.fiction-list article:hover {
+    background: #FF6600;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+.fiction-list h4 {
+    margin: 0 0 10px 0;
+}
+
+.fiction-list a {
+    color: #FF6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.fiction-list a:hover {
+    color: #fff;
+}
+
+/* Community Features Section */
+#community {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#community h2 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#community h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, #FF6600, #FF9900);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.forum, .fan-polls, .events-calendar {
+    margin-bottom: 20px;
+}
+
+.forum h3, .fan-polls h3, .events-calendar h3 {
+    font-family: 'Naruto', sans-serif;
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.forum h3::before, .fan-polls h3::before, .events-calendar h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #FF6600;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.forum-links, .events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forum-links li, .events-list li {
+    margin-bottom: 10px;
+}
+
+.forum-links a, .events-list h4 {
+    color: #FF6600;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.forum-links a:hover, .events-list h4:hover {
+    color: #333;
+    transform: scale(1.05);
+}
+
+.poll, .quiz {
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.poll:hover, .quiz:hover {
+    background: #FF6600;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.poll h4, .quiz h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.poll ul {
+    list-style: none;
+    padding: 0;
+}
+
+.poll ul li {
+    margin-bottom: 5px;
+}
+
+.poll ul a {
+    color: #FF6600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.poll ul a:hover {
+    color: #fff;
+}
+
+.start-quiz-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #FF6600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.start-quiz-button:hover {
+    background: #FF9900;
+    transform: scale(1.05);
+}
+/* Overall Styles for Merchandise & Resources */
+#merchandise {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.merchandise-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #FF6600;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.merchandise-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 3px;
+    background: #FF9900;
+    transition: width 0.4s ease;
+}
+
+.merchandise-heading:hover::before {
+    width: 100%;
+}
+
+.shop, .downloadables, .resources {
+    margin-bottom: 20px;
+}
+
+.shop-heading, .downloadables-heading, .resources-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #FF6600;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.shop-heading::before, .downloadables-heading::before, .resources-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #FF9900;
+    transition: width 0.3s ease;
+}
+
+.shop-heading:hover::before, .downloadables-heading:hover::before, .resources-heading:hover::before {
+    width: 100%;
+}
+
+.shop ul, .downloadables ul, .resources ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shop li, .downloadables li, .resources li {
+    margin: 10px 0;
+}
+
+.merch-item, .download-item, .resource-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.merch-item:hover, .download-item:hover, .resource-link:hover {
+    color: #FF6600;
+    transform: scale(1.05);
+}
+
+/* Add a subtle hover effect */
+.merch-item, .download-item, .resource-link {
+    position: relative;
+    padding: 5px;
+}
+
+.merch-item::after, .download-item::after, .resource-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #FF6600;
+    transition: width 0.3s ease;
+}
+
+.merch-item:hover::after, .download-item:hover::after, .resource-link:hover::after {
+    width: 100%;
+}
+/* Overall Styles for Interactive Elements */
+#interactive {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.interactive-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #FF6600;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.interactive-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 4px;
+    background: #FF9900;
+    transition: width 0.4s ease;
+}
+
+.interactive-heading:hover::before {
+    width: 100%;
+}
+
+.character-builder, .naruto-quiz {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-builder:hover, .naruto-quiz:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.character-builder h3, .naruto-quiz h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #FF6600;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.character-builder h3::before, .naruto-quiz h3::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #FF9900;
+    transition: width 0.3s ease;
+}
+
+.character-builder h3:hover::before, .naruto-quiz h3:hover::before {
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #FF6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #FF9900;
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+}
+/* Contact & Social Media */
+#contact {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.contact-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #0099FF;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 4px;
+    background: #00CCFF;
+    transition: width 0.5s ease;
+}
+
+.contact-heading:hover::after {
+    width: 100%;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    border-color: #0099FF;
+    box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background: #0099FF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #007ACC;
+    transform: scale(1.05);
+}
+
+.social-media {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media h3 {
+    font-family: 'Naruto', sans-serif;
+    font-size: 2em;
+    color: #0099FF;
+    margin-bottom: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0099FF;
+    transform: scale(1.1);
+}
+
+/* Blog */
+#blog {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #FF6600;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 4px;
+    background: #FF9900;
+    transition: width 0.5s ease;
+}
+
+.blog-heading:hover::after {
+    width: 100%;
+}
+
+.articles, .guest-posts {
+    margin-bottom: 20px;
+}
+
+.articles h3, .guest-posts h3 {
+    font-family: 'Naruto', sans-serif;
+    font-size: 2em;
+    color: #FF6600;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.articles h3::after, .guest-posts h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #FF9900;
+    transition: width 0.3s ease;
+}
+
+.articles h3:hover::after, .guest-posts h3:hover::after {
+    width: 100%;
+}
+
+footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+}
+/* Blog Section */
+#blog {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+}
+
+.blog-heading {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #FF6600;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog-heading::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 4px;
+    background: #FF9900;
+    transition: width 0.5s ease;
+}
+
+.blog-heading:hover::after {
+    width: 100%;
+}
+
+.articles, .guest-posts {
+    margin-bottom: 30px;
+}
+
+.articles h3, .guest-posts h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #FF6600;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.articles h3::after, .guest-posts h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #FF9900;
+    transition: width 0.3s ease;
+}
+
+.articles h3:hover::after, .guest-posts h3:hover::after {
+    width: 100%;
+}
+
+.article, .guest-post {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.article:hover, .guest-post:hover {
+    background: #e0e0e0;
+    transform: translateY(-5px);
+}
+
+.article h4, .guest-post h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.article p, .guest-post p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    color: #0099FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.read-more:hover {
+    color: #007ACC;
+    text-decoration: underline;
+}
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, #333, #555);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Arial', sans-serif; /* Ensure the font is clean and modern */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+footer p:hover {
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 15px;
+    }
+
+    .footer-links {
+        margin-top: 10px;
+    }
+
+    .footer-links a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+
+.fan-art, .fan-fiction, .cosplay-photos {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.fan-art:hover, .fan-fiction:hover, .cosplay-photos:hover {
+    transform: scale(1.02);
+}
+/* Streaming/Reading Links Section */
+.streaming-links {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.streaming-links h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.streaming-links h3::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(135deg, #FF6600, #FF9900);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+.link-icon {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link-icon:hover {
+    color: #FF6600;
+    transform: scale(1.05);
+}
+
+.link-icon i {
+    font-size: 24px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.link-icon:hover i {
+    color: #FF6600;
+}
+
+.link-icon span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Community Features */
+#community {
+    padding: 2rem;
+}
+
+.forum, .fan-polls, .events-calendar {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.forum:hover, .fan-polls:hover, .events-calendar:hover {
+    transform: scale(1.02);
+}
+
+/* Merchandise & Resources */
+#merchandise {
+    padding: 2rem;
+}
+
+.shop, .downloadables, .resources {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.shop:hover, .downloadables:hover, .resources:hover {
+    transform: scale(1.02);
+}
+
+/* Interactive Elements */
+#interactive {
+    padding: 2rem;
+}
+
+.character-builder, .naruto-quiz {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.character-builder:hover, .naruto-quiz:hover {
+    transform: scale(1.02);
+}
+
+/* Contact & Social Media */
+#contact {
+    padding: 2rem;
+}
+
+#contact-form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+#contact-form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+#contact-form input, #contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#contact-form button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #e65c00;
+}
+
+/* Footer */
+footer {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Blog */
+#blog {
+    padding: 2rem;
+}
+
+.articles, .guest-posts {
+    background: #fff;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.articles:hover, .guest-posts:hover {
+    transform: scale(1.02);
+}
+.latest-news {
+    background: #f4f4f4; /* Light background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    perspective: 1000px; /* Add perspective to enable 3D effects */
+}
+
+.latest-news h2 {
+    font-family: 'Naruto', sans-serif; /* Replace with your chosen font */
+    color: #FF6600; /* Naruto theme color */
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+
+.latest-news h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: rotateX(10deg);
+    z-index: -1;
+}
+
+.latest-news h2:hover {
+    transform: rotateX(15deg) rotateY(15deg) translateZ(20px);
+    color: #FF9900; /* Change color on hover */
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.latest-news h2:active {
+    transform: rotateX(20deg) rotateY(20deg) translateZ(30px);
+    color: #FF6600; /* Change color on active */
+}
+.featured-content {
+    background: #ffffff; /* Light background for contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-content h2 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    color: #FF6600; /* Theme color */
+    font-size: 3em;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    transform: perspective(500px) rotateX(0deg);
+    transition: transform 0.6s ease, color 0.6s ease;
+}
+
+.featured-content h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background: rgba(0, 0, 0, 0.1);
+    transform: translate(-50%, -50%) rotateX(20deg);
+    z-index: -1;
+    transition: transform 0.6s ease;
+}
+
+.featured-content h2:hover {
+    transform: perspective(500px) rotateX(-10deg) rotateY(10deg);
+    color: #FF9900; /* Highlight color on hover */
+}
+
+.featured-content h2:active {
+    transform: perspective(500px) rotateX(-15deg) rotateY(15deg);
+    color: #FF6600; /* Darker highlight on active */
+}
+
+.content-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.content-item {
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.content-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.content-item h3 {
+    font-size: 1.5em;
+    color: #333;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    transition: color 0.4s ease;
+}
+
+.content-item p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 10px 10px;
+    text-align: center;
+}
+
+.content-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.content-item:hover img {
+    transform: scale(1.1);
+}
+
+.content-item:hover h3 {
+    color: #FF6600; /* Change text color on hover */
+}
+.character-profiles {
+    background: #f4f4f4; /* Light background for contrast */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.character-profiles h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    color: #FF6600; /* Theme color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.character-profiles h3::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #FF6600; /* Theme color */
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+}
+
+.character-profiles h3:hover::after {
+    transform: translateX(-50%) scaleX(1.2);
+}
+
+.profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.profile-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    position: relative;
+    opacity: 0.9;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.profile-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.profile-info h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.4s ease;
+}
+
+.profile-info p {
+    font-size: 1em;
+    color: #666;
+}
+
+.profile-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.profile-card:hover img {
+    transform: scale(1.1);
+}
+
+.profile-card:hover .profile-info h4 {
+    color: #FF6600; /* Highlight color on hover */
+}
+.series-overview {
+    background: #fafafa; /* Light background for readability */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.series-overview h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    color: #FF6600; /* Theme color */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    transition: color 0.4s ease;
+}
+
+.series-overview h3::after {
+    content: '';
+    display: block;
+    height: 4px;
+    background: #FF6600; /* Theme color */
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease;
+}
+
+.series-overview h3:hover {
+    color: #FF3300; /* Slightly darker color on hover */
+}
+
+.series-overview h3:hover::after {
+    transform: translateX(-50%) scaleX(1.2);
+}
+
+.overview-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.overview-description {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    max-width: 800px;
+    margin: auto;
+}
+
+.overview-description:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.overview-details, .overview-facts {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.4s ease;
+    max-width: 800px;
+    margin: auto;
+}
+
+.overview-details h4, .overview-facts h4 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    color: #FF6600; /* Theme color */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.overview-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+.overview-details li, .overview-facts p {
+    font-size: 1em;
+    color: #333;
+    margin: 5px 0;
+    transition: color 0.4s ease;
+}
+
+.overview-details:hover, .overview-facts:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.overview-details li:hover, .overview-facts p:hover {
+    color: #FF6600; /* Highlight color on hover */
+}
+.snow-effect {
+    position: relative;
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #FF6600; /* Theme color */
+    margin: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.snow-effect::before, .snow-effect::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.snow-effect::before {
+    background: radial-gradient(circle, #fff 0%, transparent 50%);
+    opacity: 0;
+    animation: snow 3s linear infinite;
+}
+
+.snow-effect::after {
+    background: radial-gradient(circle, #fff 0%, transparent 50%);
+    opacity: 0;
+    animation: snow 3s linear infinite 1s;
+}
+
+.snow-effect:hover::before, .snow-effect:hover::after {
+    opacity: 1;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+
+.snow-effect span {
+    position: relative;
+    z-index: 2; /* Ensure the text is above the snow effect */
+}
+.history-trivia {
+    position: relative;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-trivia:hover {
+    background: #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.history-trivia h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.history-trivia h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(45deg, #FF6600, #FF9900);
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(30deg);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.history-trivia:hover h3::before {
+    opacity: 0.8;
+}
+
+.history-trivia .trivia-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.history-trivia .trivia-image:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.history-trivia .intro-text {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.history-trivia:hover .intro-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.history-trivia .trivia-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    font-size: 1em;
+}
+
+.history-trivia .trivia-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.history-trivia .trivia-list li::before {
+    content: '⚫';
+    position: absolute;
+    left: 0;
+    color: #FF6600;
+    transition: color 0.3s ease;
+}
+
+.history-trivia .trivia-list li:hover {
+    color: #FF6600;
+    transform: scale(1.05);
+}
+
+.history-trivia .trivia-list li:hover::before {
+    color: #FF9900;
+}
+.episodes-manga {
+    padding: 20px;
+    background: #e9f4f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episodes-manga:hover {
+    background: #d0e8ef;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.episodes-manga h2 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.episodes-manga h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(45deg, #FF6600, #FF9900);
+    opacity: 0.5;
+    transform: translateX(-50%) rotate(30deg);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.episodes-manga:hover h2::before {
+    opacity: 0.8;
+}
+
+.episodes-manga .content-info {
+    margin-top: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.episodes-manga:hover .content-info {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.episodes-manga .content-info p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.episodes-manga .content-info ul.episodes-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #333;
+    font-size: 1em;
+}
+
+.episodes-manga .content-info ul.episodes-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.episodes-manga .content-info ul.episodes-list li::before {
+    content: '⚫';
+    position: absolute;
+    left: 0;
+    color: #FF6600;
+    transition: color 0.3s ease;
+}
+
+.episodes-manga .content-info ul.episodes-list li:hover {
+    color: #FF6600;
+    transform: scale(1.05);
+}
+
+.episodes-manga .content-info ul.episodes-list li:hover::before {
+    color: #FF9900;
+}
+/* General Styles for Both Sections */
+.episode-guides, .manga-chapters {
+    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.episode-guides:hover, .manga-chapters:hover {
+    background: #e0e0e0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+    font-family: 'Naruto', sans-serif; /* Custom font */
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(135deg, #FF6600, #FF9900);
+    opacity: 0.3;
+    transform: translateX(-50%) rotate(45deg);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.episode-guides:hover h3::before, .manga-chapters:hover h3::before {
+    opacity: 0.6;
+}
+
+.guide-content, .chapter-synopsis {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.episode-guides:hover .guide-content, .manga-chapters:hover .chapter-synopsis {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.episode-summary, .manga-summary {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #FF6600;
+    background: #fafafa;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.episode-summary:hover, .manga-summary:hover {
+    background: #ffe0b2;
+    transform: scale(1.02);
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+.news-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.news-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-item h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    color: #666;
+    font-size: 1em;
+}
+
+.news-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation for News Item Loading */
+.news-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .hero-banner {
+        height: 250px;
+    }
+
+    .hero-banner h1 {
+        font-size: 2em;
+    }
+
+    .latest-news h2,
+    .feature-content h2 {
+        font-size: 1.5em;
+    }
+
+    .featured-content,
+    .character-profiles,
+    .series-overview,
+    .history-trivia,
+    .episode-guides,
+    .manga-chapters,
+    .streaming-links,
+    .fan-art,
+    .fan-fiction,
+    .cosplay-photos,
+    .forum,
+    .fan-polls,
+    .events-calendar,
+    .shop,
+    .downloadables,
+    .resources,
+    .character-builder,
+    .naruto-quiz,
+    #contact-form,
+    .articles,
+    .guest-posts {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 1.5em;
+    }
+
+    .latest-news h2,
+    .feature-content h2,
+    .character-profiles h3,
+    .series-overview h3,
+    .history-trivia h3,
+    .episode-guides h3,
+    .manga-chapters h3,
+    .streaming-links a,
+    .fan-art h3,
+    .fan-fiction h3,
+    .cosplay-photos h3,
+    .forum h3,
+    .fan-polls h3,
+    .events-calendar h3,
+    .shop h3,
+    .downloadables h3,
+    .resources h3,
+    .character-builder h3,
+    .naruto-quiz h3,
+    .blog-heading {
+        font-size: 1.2em;
+    }
+
+    .hero-banner {
+        height: 200px;
+    }
+
+    .social-media a,
+    .streaming-links a {
+        padding: 8px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: calc(100% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-banner h1 {
+        font-size: 1.2em;
+    }
+
+    .latest-news h2,
+    .feature-content h2,
+    .character-profiles h3,
+    .series-overview h3,
+    .history-trivia h3,
+    .episode-guides h3,
+    .manga-chapters h3,
+    .streaming-links a,
+    .fan-art h3,
+    .fan-fiction h3,
+    .cosplay-photos h3,
+    .forum h3,
+    .fan-polls h3,
+    .events-calendar h3,
+    .shop h3,
+    .downloadables h3,
+    .resources h3,
+    .character-builder h3,
+    .naruto-quiz h3,
+    .blog-heading {
+        font-size: 1em;
+    }
+
+    .hero-banner {
+        height: 150px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .hero-banner {
+        height: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    header, footer {
+        padding: 0.5rem;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .hero-banner {
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .hero-banner {
+        height: 200px;
+    }
+
+    section {
+        padding: 1rem;
+        margin: 0.5rem auto;
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+
+    #contact-form button {
+        padding: 0.5rem;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 12px;
+    }
+
+    .hero-banner {
+        height: 150px;
+    }
+
+    section {
+        padding: 0.5rem;
+        margin: 0.5rem auto;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #contact-form input, #contact-form textarea {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+
+    #contact-form button {
+        padding: 0.5rem;
+        font-size: 12px;
+    }
+}
